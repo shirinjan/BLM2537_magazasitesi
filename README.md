@@ -1,0 +1,1 @@
+# BLM2537_magazasitesi
