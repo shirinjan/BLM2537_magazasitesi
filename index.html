@@ -9,7 +9,7 @@
 <body>
     <header class="navbar">
         <div class="logo-menu">
-            <button id="menu-button" class="menu-button">
+            <button id="menu-button" class="menu-button" aria-label="Open menu">
                 <img src="/img/menu_3lines.png" width="30">
             </button>
             <img src="/img/main_logo.png" width="150">
@@ -25,17 +25,27 @@
         </div>
     </header>
 
-    <div class="overlay"></div>
+    <div class="overlay" id="overlay"></div>
 
     <aside class="side-menu" id="side-menu">
-        <button id="close-button" class="close-button">X</button>
-        <ul>
-            <li><a href="catalog.html?category-new">New in</a></li>
-            <li><a hred="catalog.html?category-sale">Sale</a></li>
+        <button id="close-button" class="close-button" aria-label="Close menu">✕</button>
+        <ul class="menu-top">
+            <li><a href="catalog.html?category=new" class="newin">New in</a></li>
+            <li><a href="catalog.html?category=sale" class="sale">Sale</a></li>
         </ul>
 
         <h3>Collection</h3>
+        <ul class="menu-list">
+            <li><a href="catalog.html?category=jacketscoats">Jackets/Coats</a></li>
+            <li><a href="catalog.html?category=tshirts">T-shirts</a></li>
+            <li><a href="catalog.html?category=jeans">Jeans</a></li>
+            <li><a href="catalog.html?category=pants">Pants</a></li>
+            <li><a href="catalog.html?category=sweatshirts">Sweatshirts</a></li>
+            <li><a href="catalog.html?category=dresses">Dresses</a></li>
+            <li><a href="catalog.html?category=shoes">Shoes</a></li>
+        </ul>
     </aside>
+
     <main>
         <section>
             <img src="/img/banner1.png" class="banner">
@@ -45,5 +55,6 @@
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
