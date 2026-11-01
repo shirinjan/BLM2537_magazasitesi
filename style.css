@@ -45,7 +45,6 @@ body{
     overflow-y: auto;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
-    z-index: 1001;
 }
 
 .side-menu.open{
@@ -59,7 +58,6 @@ body{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3 ease;
-    z-index: 1000;
 }
 
 .overlay.open {
@@ -82,5 +80,52 @@ body{
 }
 
 .side-menu .sale { 
-    color: #3b6cf5; font-weight: bold;
+    color: purple; font-weight: bold;
+}
+
+.featured{
+    padding: 40px 50px;
+}
+
+.featured h2{
+    margin-bottom: 24px:
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card{
+    flex: 220px;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.product-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.product-card h3{
+    margin: 12px 0 4px;
+    font-size: 16px;
+}
+
+.price{
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.add-button{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #6b3fa0;
+    background: #fff;
+    color: #6b3fa0;
+    cursor: pointer;
 }
